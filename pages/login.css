@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #C8A7C4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tela {
+    display: flex;
+    width: 70%; 
+    height: 80%;
+}
+
+#esquerda, #direita {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente dentro da div */
+    justify-content: center; /* Centraliza horizontalmente dentro da div */
+    width: 35%;
+}
+
+#esquerda {
+    background-color: #5C415D; 
+    border-top-left-radius: 24px; 
+    border-bottom-left-radius: 24px;
+}
+
+#icone1 {
+    display: block;
+    height: 200px;
+}
+
+#direita {
+    background-color: #F9F9F9; 
+    border-top-right-radius: 24px; 
+    border-bottom-right-radius: 24px;
+    display: flex;
+    flex-direction: column; /* Alinhar os elementos verticalmente */
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 20px;
+}
+
+#formulario {
+    width: 80%; /* Define a largura do formulário para 80% da largura da div direita */
+    text-align: center; /* Alinha o conteúdo do formulário ao centro */
+}
+
+.input-container {
+    margin-bottom: 10px;
+    text-align: left; /* Alinha os rótulos e inputs à esquerda */
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #0B0014;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-weight: 300;
+    color: #0B0014;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#botao {
+    margin-top: 24px;
+    height: 32px;
+    background-color: #5C415D;
+    color: #f9f9f9;
+    cursor: pointer;
+    padding-top: 8px;
+}
+
+#botao:hover {
+    background-color: #3D2B3D;
+}
+
+#usuario, #senha {
+    background-color: #D6D0D0;
+    color: #393E41;
+}
+

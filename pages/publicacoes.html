@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Publicações</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="publicacoes.css">
+</head>
+<body>
+    <header>
+        <img id="logo_header" src="imgs/logo_diario.png" alt="Logo">
+        <p class="texto_sair"><a class="texto_sair" href="login.html">Sair</a></p>
+        <a href="login.html"><img id="icone_sair" src="imgs/sair.png" alt="Logo"></a>
+    </header>
+
+    <div id="tela">
+        <div id="nova_publicacao">
+            <img id="perfil_branco" src="imgs/icone3.png" alt="Perfil">
+            <p class="nome_usuario" id="nome-usuario">Nome de Usuário</p>
+
+            <form id="formulario" action="">
+                <div><textarea id="box" name="textarea" placeholder="O que você está pensando?"></textarea></div>
+                <button id="botao_publicar" type="submit">PUBLICAR</button>
+            </form>
+        </div>
+
+        <ul id="posts">
+            
+        </ul>
+    </div>
+
+    <script type="module" src="/pages/Controllers/Publicacoes.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const usuario = urlParams.get('usuario');
+            const nomeUsuarioElement = document.getElementById('nome-usuario');
+            if (nomeUsuarioElement) {
+                nomeUsuarioElement.textContent = usuario;
+            }
+        });
+    </script>
+</body>
+</html>

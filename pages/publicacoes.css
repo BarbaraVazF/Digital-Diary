@@ -1,0 +1,155 @@
+/* Evitar que o elemneto cresça além do definido */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    width: 100%;
+    background-color: #5C415D;
+    text-align: center; 
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 1px 0 3px #696773;
+}
+
+#logo_header, .texto_sair, #icone_sair {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo_header {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.texto_sair, #icone_sair {
+    float: right;
+}
+
+#icone_sair {
+    margin-right: 12px;
+    margin-top: 6px;
+}
+
+.texto_sair {
+    margin-right: 32px;
+    color: #f9f9f9;
+    margin-top: 1.5px;
+}
+
+.texto_sair:hover, #icone_sair:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tela {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#nova_publicacao {
+    background-color: #C8A7C4;
+    padding: 24px 40px;
+    color: #0B0014;
+    border-radius: 24px;
+    margin-top: 56px;
+    margin-bottom: 48px;
+}
+
+#box {
+    width: 820px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: #f9f9f9;
+    color: #0B0014;
+    border: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+#box:focus {
+    outline: none;
+}
+
+#botao_publicar {
+    height: 32px;
+    width: 200px;
+    background-color: #5C415D;
+    color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+#botao_publicar:hover {
+    background-color: #3D2B3D;
+}
+
+#formulario {
+    text-align: center;
+}
+
+#perfil_branco, .nome_usuario {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+.nome_usuario {
+    font-weight: 400;
+    color: #0B0014;
+}
+
+.post {
+    background-color: #f9f9f9;
+    box-shadow: 4px 4px 3px #696773;
+    padding: 24px 40px;
+    color: #f9f9f9;
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.perfil_cinza, .informacoes, .favoritada {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; 
+    margin-bottom: 8px;
+}
+
+.hora {
+    color: #696773;
+    font-size: 12px;
+}
+
+.texto_publicado {
+    color: #0B0014;
+    font-size: 14px;
+}
+
+.favoritada, .favoritar {
+    float: right;
+}
+
+.favoritar {
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.favoritar:hover {
+    cursor: pointer;
+}
